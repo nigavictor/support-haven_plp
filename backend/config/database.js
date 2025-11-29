@@ -1,12 +1,22 @@
 const { Pool } = require('pg');
 require('dotenv').config();
 
+// Determine if we're connecting to a remote database (Render, etc.)
+const isRemoteDatabase = process.env.DB_HOST && 
+  (process.env.DB_HOST.includes('render.com') || 
+   process.env.DB_HOST.includes('railway.app') ||
+   process.env.DB_HOST.includes('fly.io'));
+
 const pool = new Pool({
   host: process.env.DB_HOST || 'localhost',
   port: process.env.DB_PORT || 5432,
   database: process.env.DB_NAME || 'support_haven',
   user: process.env.DB_USER || 'postgres',
   password: process.env.DB_PASSWORD || 'postgres',
+  // Render and other cloud databases require SSL
+  ssl: isRemoteDatabase ? {
+    rejectUnauthorized: false
+  } : false,
 });
 
 // Test connection
