@@ -190,7 +190,7 @@ This is a hackathon project. Feel free to fork and improve!
 
 ## ⚠️ Important Disclaimer
 
-**This platform is not a replacement for emergency services.** If you are in immediate danger, please contact your local emergency services (911, 112, etc.).
+**This platform is not a replacement for emergency services.** If you are in immediate danger, please contact your local emergency services (999, 911, 112, etc.).
 
 ## 📄 License
 

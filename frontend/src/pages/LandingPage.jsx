@@ -23,7 +23,7 @@ function LandingPage() {
             <div className="ml-3">
               <p className="text-sm text-yellow-700">
                 <strong>Important:</strong> This platform is not a replacement for emergency services. 
-                If you are in immediate danger, please call your local emergency number (911, 112, etc.).
+                If you are in immediate danger, please call your local emergency number (999, 911, 112, etc.).
               </p>
             </div>
           </div>
