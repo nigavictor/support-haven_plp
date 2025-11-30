@@ -25,6 +25,10 @@ When you click the PROJECT, Settings only shows "Edit Name" and "Delete Project"
 
 **Note:** Render free tier allows only 1 PROJECT, but you can have multiple SERVICES in it!
 
+### 🎯 IMPORTANT: This Step is ONLY for Backend!
+- Root Directory: `backend` (stays as `backend` - never change it to `frontend`)
+- This service handles API requests, database, etc.
+
 ### Option A: Configure Existing `support-haven_plp` Service as Backend
 
 1. **Click on `support-haven_plp`** (the service name itself)
@@ -38,7 +42,7 @@ When you click the PROJECT, Settings only shows "Edit Name" and "Delete Project"
 
 3. **Go to "Settings" tab** (of the SERVICE):
    - Find "Root Directory" field
-   - Enter: `backend`
+   - Enter: `backend` ⚠️ **This stays as `backend` - do NOT change it later!**
    - Find "Build Command": `npm install`
    - Find "Start Command": `npm start`
    - **Save changes**
@@ -83,17 +87,24 @@ When you click the PROJECT, Settings only shows "Edit Name" and "Delete Project"
 
 ## ✅ Step 2: Deploy Frontend to Vercel (Different Website!)
 
+**⚠️ CRITICAL: This is a SEPARATE service on a DIFFERENT platform!**
+- **NOT modifying the Render service from Step 1**
+- This is a **completely new deployment** on Vercel
+- Render service (Step 1) = Backend (root: `backend`) - **stays unchanged**
+- Vercel project (Step 2) = Frontend (root: `frontend`) - **separate thing**
+
 **This is NOT Render - it's a completely different platform called Vercel!**
 **Vercel has no project limit on free tier, so you can create a project there.**
 
 1. **Open a new browser tab/window**
-2. **Go to https://vercel.com**
+2. **Go to https://vercel.com** (NOT render.com!)
 3. Sign up/login with GitHub
 4. Click **"Add New"** → **"Project"**
    - ✅ You CAN create projects in Vercel (no limit on free tier)
+   - ✅ This is a **NEW deployment**, NOT modifying Render
 5. Import repository: `nigavictor/support-haven_plp`
 6. Configure:
-   - **Root Directory:** `frontend`
+   - **Root Directory:** `frontend` ⚠️ **This is `frontend` because it's the frontend deployment**
    - **Framework Preset:** Vite
 7. Add environment variable:
    - Key: `VITE_API_URL`
@@ -119,9 +130,37 @@ When you click the PROJECT, Settings only shows "Edit Name" and "Delete Project"
 
 ## 🎯 Summary
 
-1. **Render:** Click on SERVICE → Configure → Add environment variables
-2. **Vercel:** Different website → Deploy frontend → Get URL
-3. **Render:** Update SERVICE environment variable with Vercel URL
+**You deploy TWO separate things:**
+
+1. **Render Service** (`support-haven_plp`):
+   - Root Directory: `backend` ✅ (stays as `backend` - never changes)
+   - Platform: render.com
+   - Purpose: Backend API server
+
+2. **Vercel Project** (new):
+   - Root Directory: `frontend` ✅ (different deployment)
+   - Platform: vercel.com (different website!)
+   - Purpose: Frontend React app
+
+3. **Update Render:** Change `FRONTEND_URL` environment variable to point to Vercel URL
+
+---
+
+## 📊 Visual Summary
+
+```
+Step 1 (Render):
+└── support-haven_plp SERVICE
+    └── Root Directory: backend ✅
+    └── URL: https://support-haven-plp.onrender.com
+
+Step 2 (Vercel - DIFFERENT PLATFORM):
+└── support-haven-frontend PROJECT (new)
+    └── Root Directory: frontend ✅
+    └── URL: https://support-haven-plp.vercel.app
+```
+
+**These are TWO SEPARATE deployments - you don't modify one to become the other!**
 
 ---
 
