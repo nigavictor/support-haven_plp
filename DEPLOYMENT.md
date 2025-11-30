@@ -36,13 +36,14 @@ This is the easiest and most reliable free option.
      ```
      NODE_ENV=production
      PORT=10000
-     DB_HOST=<from your database connection string>
+     DB_HOST=dpg-d4lhff0gjchc73anqadg-a.oregon-postgres.render.com
      DB_PORT=5432
-     DB_NAME=<from your database connection string>
-     DB_USER=<from your database connection string>
-     DB_PASSWORD=<from your database connection string>
+     DB_NAME=support_haven_db
+     DB_USER=support_haven_db_user
+     DB_PASSWORD=XbEPf6zXLEFLTSmmLBgDrcGpocl4fCFP
      FRONTEND_URL=https://your-frontend-url.vercel.app
      ```
+     **Note:** You'll update `FRONTEND_URL` in Step 4 after deploying the frontend.
    - Click "Create Web Service"
 
 #### Step 2: Deploy Frontend to Vercel
@@ -51,14 +52,7 @@ This is the easiest and most reliable free option.
    - Go to https://vercel.com
    - Sign up with GitHub (free)
 
-2. **Update frontend config:**
-   - Edit `frontend/vite.config.js` to remove proxy (not needed in production)
-   - Create `frontend/.env.production`:
-     ```
-     VITE_API_URL=https://your-backend-name.onrender.com
-     ```
-
-3. **Deploy:**
+2. **Deploy Frontend:**
    - In Vercel dashboard, click "Add New" → "Project"
    - Import your GitHub repository
    - Settings:
@@ -70,11 +64,24 @@ This is the easiest and most reliable free option.
      ```
      VITE_API_URL=https://your-backend-name.onrender.com
      ```
+     (Replace with your actual Render backend URL from Step 1)
    - Click "Deploy"
+   - Wait for deployment to complete (usually 1-2 minutes)
 
-4. **Update backend CORS:**
-   - In Render, update `FRONTEND_URL` to your Vercel URL
-   - Restart the backend service
+4. **Get Your Vercel Frontend URL:**
+   - After deployment, Vercel will show you a URL like:
+     - `https://support-haven-plp.vercel.app`
+     - OR `https://support-haven-plp-xyz123.vercel.app`
+   - **Copy this URL** - you'll need it for the next step!
+
+5. **Update Backend CORS:**
+   - Go back to Render dashboard
+   - Click on your backend service (`support-haven-backend`)
+   - Go to "Environment" tab
+   - Find `FRONTEND_URL` variable
+   - Update it to your Vercel URL (from Step 4)
+   - Click "Save Changes"
+   - Render will automatically redeploy with the new setting
 
 ---
 
@@ -157,17 +164,24 @@ Railway can host everything together.
 
 ### After Deploying:
 
-1. **Update frontend API URL:**
-   - Make sure frontend knows where backend is
+1. **Get Your Frontend URL:**
+   - After Vercel deployment completes, you'll see a URL like:
+     - `https://support-haven-plp.vercel.app`
+   - **Copy this URL** - see `HOW_TO_GET_VERCEL_URL.md` for detailed instructions
 
-2. **Test the deployed app:**
-   - Visit your frontend URL
+2. **Update Backend CORS:**
+   - Go to Render dashboard → Your backend service
+   - Environment tab → Update `FRONTEND_URL` to your Vercel URL
+   - Save and redeploy
+
+3. **Test the deployed app:**
+   - Visit your Vercel URL (e.g., `https://support-haven-plp.vercel.app`)
    - Check browser console for errors
-   - Test all features
+   - Test all features (stories, chat, admin panel)
 
-3. **Share with teammates:**
-   - Send them the frontend URL
-   - They can access it from anywhere!
+4. **Share with teammates:**
+   - Send them your Vercel URL
+   - They can access it from anywhere in the world!
 
 ---
 
