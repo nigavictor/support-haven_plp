@@ -30,7 +30,7 @@
    DB_PORT=5432
    DB_NAME=support_haven_db
    DB_USER=support_haven_db_user
-   DB_PASSWORD=XbEPf6zXLEFLTSmmLBgDrcGpocl4fCFP
+   DB_PASSWORD=YOUR_DATABASE_PASSWORD
    FRONTEND_URL=https://your-frontend-url.vercel.app
    ADMIN_USERNAME=admin
    ADMIN_PASSWORD=admin123
@@ -87,7 +87,7 @@ Your Render database is ready:
 - **Host:** `dpg-d4lhff0gjchc73anqadg-a.oregon-postgres.render.com`
 - **Database:** `support_haven_db`
 - **User:** `support_haven_db_user`
-- **Password:** `XbEPf6zXLEFLTSmmLBgDrcGpocl4fCFP`
+- **Password:** `YOUR_DATABASE_PASSWORD`
 
 ## 📝 Notes
 

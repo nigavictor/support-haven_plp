@@ -38,7 +38,7 @@ Your Render PostgreSQL database is now configured and ready to use.
    DB_PORT=5432
    DB_NAME=support_haven_db
    DB_USER=support_haven_db_user
-   DB_PASSWORD=XbEPf6zXLEFLTSmmLBgDrcGpocl4fCFP
+   DB_PASSWORD=YOUR_DATABASE_PASSWORD
    FRONTEND_URL=https://your-frontend-url.vercel.app
    ADMIN_USERNAME=admin
    ADMIN_PASSWORD=admin123
@@ -88,7 +88,7 @@ Visit your Vercel URL and test:
 
 For reference, your connection string is:
 ```
-postgresql://support_haven_db_user:XbEPf6zXLEFLTSmmLBgDrcGpocl4fCFP@dpg-d4lhff0gjchc73anqadg-a.oregon-postgres.render.com/support_haven_db
+postgresql://support_haven_db_user:YOUR_DATABASE_PASSWORD@dpg-d4lhff0gjchc73anqadg-a.oregon-postgres.render.com/support_haven_db
 ```
 
 ## Security Note

@@ -45,7 +45,7 @@ When you click on the **PROJECT**, Settings only shows "Edit Name" and "Delete P
      DB_PORT=5432
      DB_NAME=support_haven_db
      DB_USER=support_haven_db_user
-     DB_PASSWORD=XbEPf6zXLEFLTSmmLBgDrcGpocl4fCFP
+     DB_PASSWORD=YOUR_DATABASE_PASSWORD
      FRONTEND_URL=http://localhost:3000
      ```
 

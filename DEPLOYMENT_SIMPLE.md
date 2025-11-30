@@ -61,7 +61,7 @@ Think of it like: Build the house first, then give it the address later!
    DB_PORT=5432
    DB_NAME=support_haven_db
    DB_USER=support_haven_db_user
-   DB_PASSWORD=XbEPf6zXLEFLTSmmLBgDrcGpocl4fCFP
+   DB_PASSWORD=YOUR_DATABASE_PASSWORD
    FRONTEND_URL=http://localhost:3000
    ```
    **Note:** We use `http://localhost:3000` as placeholder for now - we'll update it later!

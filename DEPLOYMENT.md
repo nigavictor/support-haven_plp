@@ -28,7 +28,7 @@ This is the easiest and most reliable free option.
      - **Host:** `dpg-d4lhff0gjchc73anqadg-a.oregon-postgres.render.com`
      - **Database:** `support_haven_db`
      - **User:** `support_haven_db_user`
-     - **Password:** `XbEPf6zXLEFLTSmmLBgDrcGpocl4fCFP`
+     - **Password:** `YOUR_DATABASE_PASSWORD`
    - **Note:** You can skip creating a new database since you already have one!
 
 3. **Deploy Backend:**
@@ -49,7 +49,7 @@ This is the easiest and most reliable free option.
      DB_PORT=5432
      DB_NAME=support_haven_db
      DB_USER=support_haven_db_user
-     DB_PASSWORD=XbEPf6zXLEFLTSmmLBgDrcGpocl4fCFP
+     DB_PASSWORD=YOUR_DATABASE_PASSWORD
      FRONTEND_URL=http://localhost:3000
      ```
      ⚠️ **Important:** Use `http://localhost:3000` as placeholder for now. We'll update this in Step 4 with the real Vercel URL!

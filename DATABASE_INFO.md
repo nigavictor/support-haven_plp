@@ -10,25 +10,25 @@ Your database is already created and ready to use!
 - **Port:** `5432`
 - **Database:** `support_haven_db`
 - **Username:** `support_haven_db_user`
-- **Password:** `XbEPf6zXLEFLTSmmLBgDrcGpocl4fCFP`
+- **Password:** `YOUR_DATABASE_PASSWORD` ⚠️ **Get this from Render dashboard, never commit real passwords!**
 
 ## Connection Strings
 
 ### Internal URL (for Render services):
 ```
-postgresql://support_haven_db_user:XbEPf6zXLEFLTSmmLBgDrcGpocl4fCFP@dpg-d4lhff0gjchc73anqadg-a/support_haven_db
+postgresql://support_haven_db_user:YOUR_DATABASE_PASSWORD@dpg-d4lhff0gjchc73anqadg-a/support_haven_db
 ```
 
 ### External URL (for external connections):
 ```
-postgresql://support_haven_db_user:XbEPf6zXLEFLTSmmLBgDrcGpocl4fCFP@dpg-d4lhff0gjchc73anqadg-a.oregon-postgres.render.com/support_haven_db
+postgresql://support_haven_db_user:YOUR_DATABASE_PASSWORD@dpg-d4lhff0gjchc73anqadg-a.oregon-postgres.render.com/support_haven_db
 ```
 
 ## PSQL Command
 
 To connect via command line:
 ```bash
-PGPASSWORD=XbEPf6zXLEFLTSmmLBgDrcGpocl4fCFP psql -h dpg-d4lhff0gjchc73anqadg-a.oregon-postgres.render.com -U support_haven_db_user support_haven_db
+PGPASSWORD=YOUR_DATABASE_PASSWORD psql -h dpg-d4lhff0gjchc73anqadg-a.oregon-postgres.render.com -U support_haven_db_user support_haven_db
 ```
 
 ## Environment Variables for Render Backend
@@ -40,7 +40,7 @@ DB_HOST=dpg-d4lhff0gjchc73anqadg-a.oregon-postgres.render.com
 DB_PORT=5432
 DB_NAME=support_haven_db
 DB_USER=support_haven_db_user
-DB_PASSWORD=XbEPf6zXLEFLTSmmLBgDrcGpocl4fCFP
+DB_PASSWORD=YOUR_DATABASE_PASSWORD
 ```
 
 ## Security Note

@@ -43,7 +43,7 @@ This will tell us what to do next!
    DB_PORT=5432
    DB_NAME=support_haven_db
    DB_USER=support_haven_db_user
-   DB_PASSWORD=XbEPf6zXLEFLTSmmLBgDrcGpocl4fCFP
+   DB_PASSWORD=YOUR_DATABASE_PASSWORD
    FRONTEND_URL=http://localhost:3000
    ```
 6. Click **"Save Changes"** → Auto-redeploys
