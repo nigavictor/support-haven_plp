@@ -8,6 +8,11 @@
 
 ---
 
+**Primary Theme: Survivor Support**  
+**Secondary Theme: Safety by Design**
+
+---
+
 ## Slide 2: The Problem
 
 ### The Challenge We're Addressing
@@ -25,6 +30,9 @@
 ## Slide 3: Our Solution
 
 ### Support Haven: A Digital Safe Space
+
+**Primary Theme: Survivor Support**  
+**Secondary Theme: Safety by Design**
 
 A secure, anonymous platform where survivors of gender-based violence can:
 
@@ -92,7 +100,9 @@ A secure, anonymous platform where survivors of gender-based violence can:
 
 ## Slide 6: Safety & Privacy
 
-### Our Commitment to Safety
+### Secondary Theme: Safety by Design
+
+**Our commitment to safety is built into every feature:**
 
 🔒 **Anonymous by Design**
 - No account creation required
@@ -114,17 +124,22 @@ A secure, anonymous platform where survivors of gender-based violence can:
 - Links to crisis hotlines (999, 911, 112)
 - Support for immediate help
 
+**Safety isn't an afterthought—it's our foundation.**
+
 ---
 
 ## Slide 7: Impact & Vision
 
-### The Difference We're Making
+### Primary Theme: Survivor Support
+
+**The Difference We're Making**
 
 #### **Immediate Impact**
 - Provides safe space for survivors to share
 - Reduces isolation through community connection
 - Increases access to support resources
 - Breaks down barriers to seeking help
+- **Survivor Support**: Every feature designed to empower and heal
 
 #### **Long-term Vision**
 - Expand to multiple languages
@@ -250,11 +265,18 @@ A secure, anonymous platform where survivors of gender-based violence can:
 
 ### The Human Impact
 
-**For Survivors:**
+**Primary Theme: Survivor Support**
 - Safe space to share without judgment
 - Community of understanding
 - Access to professional support
 - Path to healing
+- Empowerment through storytelling
+
+**Secondary Theme: Safety by Design**
+- Built-in privacy protection
+- Content safety measures
+- Secure communication channels
+- Emergency resource integration
 
 **For Society:**
 - Raises awareness of GBV
