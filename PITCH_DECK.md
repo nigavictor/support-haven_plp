@@ -65,7 +65,7 @@ A secure, anonymous platform where survivors of gender-based violence can:
 
 ---
 
-## Slide 5: Key Features
+## Slide 5: Key Features & Safety
 
 ### What Makes Support Haven Unique
 
@@ -81,21 +81,18 @@ A secure, anonymous platform where survivors of gender-based violence can:
 - Secure, encrypted communication
 - 24/7 availability
 
-#### 🛡️ **Safety First**
+#### 🛡️ **Safety by Design**
 - Content sanitization and validation
 - Automatic detection of personal information
 - Manual moderation system
 - Rate limiting and security measures
+- Emergency resource links (999, 911, 112)
 
-#### 📚 **Story Library**
-- Browse stories by category
-- Search functionality
-- Filter by type of experience
-- Community support wall
+**Safety isn't an afterthought—it's our foundation.**
 
 ---
 
-## Slide 6: Technology Stack
+## Slide 6: Technology & Technical Achievements
 
 ### Built with Modern, Scalable Technology
 
@@ -112,43 +109,13 @@ A secure, anonymous platform where survivors of gender-based violence can:
 - Security middleware (Helmet, Rate Limiting)
 
 #### **Deployment**
-- Render (Backend + Database)
-- Vercel (Frontend)
-- Fully deployed and accessible
+- ✅ Fully deployed on Render (Backend + Database) and Vercel (Frontend)
+- ✅ Production-ready with environment-based configuration
+- ✅ Error handling and fallback mechanisms
 
 ---
 
-## Slide 7: Safety & Privacy
-
-### Secondary Theme: Safety by Design
-
-**Our commitment to safety is built into every feature:**
-
-🔒 **Anonymous by Design**
-- No account creation required
-- Anonymous user IDs
-- No personal information stored
-
-🛡️ **Content Protection**
-- Automatic filtering of phone numbers, emails, addresses
-- XSS attack prevention
-- Content sanitization
-
-✅ **Moderation System**
-- Manual review before publication
-- Admin panel for story approval
-- Community guidelines enforcement
-
-🚨 **Emergency Resources**
-- Clear disclaimers about emergency services
-- Links to crisis hotlines (999, 911, 112)
-- Support for immediate help
-
-**Safety isn't an afterthought—it's our foundation.**
-
----
-
-## Slide 8: Impact & Vision
+## Slide 7: Impact & Vision
 
 ### Primary Theme: Survivor Support
 
@@ -176,33 +143,7 @@ A secure, anonymous platform where survivors of gender-based violence can:
 
 ---
 
-## Slide 9: User Journey
-
-### How Support Haven Helps
-
-1. **Discovery**
-   - User visits Support Haven
-   - Reads stories from other survivors
-   - Realizes they're not alone
-
-2. **Sharing**
-   - Submits their own story anonymously
-   - Story is reviewed and published
-   - Receives support reactions from community
-
-3. **Connection**
-   - Connects with support professionals via chat
-   - Accesses resources and guidance
-   - Finds community and solidarity
-
-4. **Healing**
-   - Feels heard and validated
-   - Connects with others who understand
-   - Takes steps toward recovery
-
----
-
-## Slide 10: Demo Highlights
+## Slide 8: Demo Highlights
 
 ### What You Can See Today
 
@@ -227,92 +168,7 @@ A secure, anonymous platform where survivors of gender-based violence can:
 
 ---
 
-## Slide 11: Technical Achievements
-
-### What We Built
-
-🏗️ **Full-Stack Application**
-- Separate frontend and backend
-- RESTful API architecture
-- Real-time communication
-- Database integration
-
-🔐 **Security Implementation**
-- Input validation and sanitization
-- CORS configuration
-- Rate limiting
-- Content filtering
-
-📱 **Responsive Design**
-- Mobile-friendly interface
-- Accessible design
-- Modern UI/UX
-- Fast loading times
-
-🚀 **Production Ready**
-- Fully deployed
-- Environment-based configuration
-- Error handling
-- Fallback mechanisms
-
----
-
-## Slide 12: Future Roadmap
-
-### Where We're Going
-
-#### **Phase 1: Enhancement (Next 3 months)**
-- Enhanced moderation tools
-- Multi-language support
-- Mobile app (React Native)
-- Advanced search and filtering
-
-#### **Phase 2: Partnerships (6 months)**
-- Integrate with crisis hotlines
-- Partner with counseling services
-- NGO collaborations
-- Professional training resources
-
-#### **Phase 3: Scale (12 months)**
-- AI-powered content moderation
-- Machine learning for safety detection
-- Analytics and insights
-- Global expansion
-
----
-
-## Slide 13: Why Support Haven Matters
-
-### The Human Impact
-
-**Primary Theme: Survivor Support**
-- Safe space to share without judgment
-- Community of understanding
-- Access to professional support
-- Path to healing
-- Empowerment through storytelling
-
-**Secondary Theme: Safety by Design**
-- Built-in privacy protection
-- Content safety measures
-- Secure communication channels
-- Emergency resource integration
-
-**For Society:**
-- Raises awareness of GBV
-- Reduces stigma
-- Encourages reporting
-- Promotes prevention
-
-**For the Future:**
-- Data-driven insights
-- Policy recommendations
-- Prevention programs
-- Systemic change
-
----
-
-## Slide 14: Call to Action
+## Slide 9: Call to Action & Contact
 
 ### Join Us in Making a Difference
 
@@ -331,35 +187,23 @@ A secure, anonymous platform where survivors of gender-based violence can:
 - Help improve features
 - Build extensions
 
+**Get in Touch:**
+- GitHub: [Your GitHub Repository]
+- Live Platform: [Your Vercel URL]
+
 **Together, we can create a world where no survivor feels alone.**
 
 ---
 
-## Slide 15: Contact & Resources
-
-### Get in Touch
-
-🌐 **Live Platform**
-- Frontend: [Your Vercel URL]
-- Backend: [Your Render URL]
-
-📧 **Contact**
-- GitHub: [Your GitHub Repository]
-- Email: [Your Contact Email]
-
-📚 **Resources**
-- Emergency: 999, 911, 112
-- Crisis Hotlines: [Local Resources]
-- Support Services: [Partner Organizations]
-
----
-
-## Slide 16: Thank You
+## Slide 10: Thank You
 
 # Thank You
 
 **Support Haven**  
 *A Safe Space for Survivors*
+
+**Primary Theme: Survivor Support**  
+**Secondary Theme: Safety by Design**
 
 **Questions?**
 
@@ -371,7 +215,7 @@ A secure, anonymous platform where survivors of gender-based violence can:
 - Use smooth transitions between slides
 - Pause after "The Problem" slide for impact
 - Demo live platform on "Demo Highlights" slide
-- Show code/architecture on "Technical Achievements"
+- Show code/architecture on "Technology" slide
 
 ### Key Talking Points
 1. **Problem**: Emphasize the scale and urgency
@@ -419,7 +263,7 @@ A secure, anonymous platform where survivors of gender-based violence can:
 - Keep slides uncluttered
 
 ### Slide Count
-- 16 slides total
+- 10 slides total
 - 5-7 minutes presentation
 - 2-3 minutes for Q&A
 
@@ -435,4 +279,3 @@ A secure, anonymous platform where survivors of gender-based violence can:
 ---
 
 **Good luck with your presentation! 🚀**
-
