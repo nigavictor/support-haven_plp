@@ -110,7 +110,6 @@ The frontend will run on `http://localhost:3000`
 - Username: `admin`
 - Password: `admin123`
 
-(Change these in production!)
 
 ## 🛠️ Technology Stack
 
