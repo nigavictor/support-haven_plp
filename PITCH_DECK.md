@@ -13,7 +13,27 @@
 
 ---
 
-## Slide 2: The Problem
+## Slide 2: Our Team
+
+### The Support Haven Development Team
+
+**Victor Niga** - Backend Development  
+*Node.js, Express.js, PostgreSQL, Socket.io*
+
+**Usanase Makala** - Frontend Development  
+*React, TailwindCSS, UI/UX Design*
+
+**Sheila Gichau** - Frontend Development  
+*React, Component Architecture, User Experience*
+
+**Victoria Mwangi** - Frontend Development  
+*React, Responsive Design, Accessibility*
+
+**Together, we've built a platform that puts survivors first.**
+
+---
+
+## Slide 3: The Problem
 
 ### The Challenge We're Addressing
 
@@ -27,7 +47,7 @@
 
 ---
 
-## Slide 3: Our Solution
+## Slide 4: Our Solution
 
 ### Support Haven: A Digital Safe Space
 
@@ -45,7 +65,7 @@ A secure, anonymous platform where survivors of gender-based violence can:
 
 ---
 
-## Slide 4: Key Features
+## Slide 5: Key Features
 
 ### What Makes Support Haven Unique
 
@@ -75,7 +95,7 @@ A secure, anonymous platform where survivors of gender-based violence can:
 
 ---
 
-## Slide 5: Technology Stack
+## Slide 6: Technology Stack
 
 ### Built with Modern, Scalable Technology
 
@@ -98,7 +118,7 @@ A secure, anonymous platform where survivors of gender-based violence can:
 
 ---
 
-## Slide 6: Safety & Privacy
+## Slide 7: Safety & Privacy
 
 ### Secondary Theme: Safety by Design
 
@@ -128,7 +148,7 @@ A secure, anonymous platform where survivors of gender-based violence can:
 
 ---
 
-## Slide 7: Impact & Vision
+## Slide 8: Impact & Vision
 
 ### Primary Theme: Survivor Support
 
@@ -156,7 +176,7 @@ A secure, anonymous platform where survivors of gender-based violence can:
 
 ---
 
-## Slide 8: User Journey
+## Slide 9: User Journey
 
 ### How Support Haven Helps
 
@@ -182,7 +202,7 @@ A secure, anonymous platform where survivors of gender-based violence can:
 
 ---
 
-## Slide 9: Demo Highlights
+## Slide 10: Demo Highlights
 
 ### What You Can See Today
 
@@ -207,7 +227,7 @@ A secure, anonymous platform where survivors of gender-based violence can:
 
 ---
 
-## Slide 10: Technical Achievements
+## Slide 11: Technical Achievements
 
 ### What We Built
 
@@ -237,7 +257,7 @@ A secure, anonymous platform where survivors of gender-based violence can:
 
 ---
 
-## Slide 11: Future Roadmap
+## Slide 12: Future Roadmap
 
 ### Where We're Going
 
@@ -261,7 +281,7 @@ A secure, anonymous platform where survivors of gender-based violence can:
 
 ---
 
-## Slide 12: Why Support Haven Matters
+## Slide 13: Why Support Haven Matters
 
 ### The Human Impact
 
@@ -292,7 +312,7 @@ A secure, anonymous platform where survivors of gender-based violence can:
 
 ---
 
-## Slide 13: Call to Action
+## Slide 14: Call to Action
 
 ### Join Us in Making a Difference
 
@@ -315,7 +335,7 @@ A secure, anonymous platform where survivors of gender-based violence can:
 
 ---
 
-## Slide 14: Contact & Resources
+## Slide 15: Contact & Resources
 
 ### Get in Touch
 
@@ -334,7 +354,7 @@ A secure, anonymous platform where survivors of gender-based violence can:
 
 ---
 
-## Slide 15: Thank You
+## Slide 16: Thank You
 
 # Thank You
 
@@ -399,7 +419,7 @@ A secure, anonymous platform where survivors of gender-based violence can:
 - Keep slides uncluttered
 
 ### Slide Count
-- Aim for 10-15 slides
+- 16 slides total
 - 5-7 minutes presentation
 - 2-3 minutes for Q&A
 
