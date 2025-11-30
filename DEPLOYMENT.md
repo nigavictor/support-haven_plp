@@ -8,6 +8,15 @@ This is the easiest and most reliable free option.
 
 ### Option 1: Vercel + Render (Recommended)
 
+#### 📖 Understanding the Order
+
+**Why deploy in this order?**
+1. **Backend first:** Needs database (you have it) ✅
+2. **Frontend second:** Needs backend URL (from step 1) ✅  
+3. **Update backend last:** Needs frontend URL (from step 2) ✅
+
+**See `DEPLOYMENT_SIMPLE.md` for detailed explanation of why this order matters!**
+
 #### Step 1: Deploy Backend to Render
 
 1. **Create a Render account:**
@@ -24,14 +33,14 @@ This is the easiest and most reliable free option.
 
 3. **Deploy Backend:**
    - In Render dashboard, click "New +" → "Web Service"
-   - Connect your GitHub repository
+   - Connect your GitHub repository: `nigavictor/support-haven_plp`
    - Select your repo
    - Settings:
      - **Name:** `support-haven-backend`
      - **Environment:** Node
-     - **Build Command:** `cd backend && npm install`
-     - **Start Command:** `cd backend && npm start`
-     - **Root Directory:** Leave empty (or set to `backend` if needed)
+     - **Root Directory:** `backend` (or leave empty)
+     - **Build Command:** `npm install`
+     - **Start Command:** `npm start`
    - Add Environment Variables:
      ```
      NODE_ENV=production
@@ -41,10 +50,12 @@ This is the easiest and most reliable free option.
      DB_NAME=support_haven_db
      DB_USER=support_haven_db_user
      DB_PASSWORD=XbEPf6zXLEFLTSmmLBgDrcGpocl4fCFP
-     FRONTEND_URL=https://your-frontend-url.vercel.app
+     FRONTEND_URL=http://localhost:3000
      ```
-     **Note:** You'll update `FRONTEND_URL` in Step 4 after deploying the frontend.
+     ⚠️ **Important:** Use `http://localhost:3000` as placeholder for now. We'll update this in Step 4 with the real Vercel URL!
    - Click "Create Web Service"
+   - Wait 2-3 minutes for deployment
+   - **Copy your backend URL** (e.g., `https://support-haven-backend.onrender.com`)
 
 #### Step 2: Deploy Frontend to Vercel
 
@@ -62,9 +73,9 @@ This is the easiest and most reliable free option.
      - **Output Directory:** `dist`
    - Add Environment Variable:
      ```
-     VITE_API_URL=https://your-backend-name.onrender.com
+     VITE_API_URL=https://support-haven-backend.onrender.com
      ```
-     (Replace with your actual Render backend URL from Step 1)
+     ⚠️ **Use your actual backend URL from Step 1!** (e.g., `https://support-haven-backend.onrender.com`)
    - Click "Deploy"
    - Wait for deployment to complete (usually 1-2 minutes)
 
