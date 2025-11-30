@@ -1,6 +1,10 @@
 # 🚀 Simple Deployment Guide - Step by Step
 
-Here's the **logical order** explained simply:
+**⚠️ Already have Render services?** 
+- See `DEPLOYMENT_FOR_EXISTING_RENDER.md` OR
+- See `YOUR_RENDER_SETUP.md` for instructions matching your current setup!
+
+Here's the **logical order** explained simply (for first-time setup):
 
 ## The Deployment Flow Explained
 
