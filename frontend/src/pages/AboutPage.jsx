@@ -93,7 +93,7 @@ function AboutPage() {
             in immediate danger, please contact your local emergency services immediately:
           </p>
           <ul className="list-disc list-inside space-y-1 ml-4">
-            <li>Emergency Services: 999 (UK), 911 (US), 112 (EU), or your local emergency number</li>
+            <li>Emergency Services: 999, 911, 112, or your local emergency number</li>
             <li>National Domestic Violence Hotline: Available 24/7 in many countries</li>
             <li>Local crisis centers and shelters</li>
           </ul>
