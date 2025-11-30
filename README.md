@@ -208,11 +208,23 @@ This is a hackathon project. For production use, consider:
 
 ### Database Credentials
 
-⚠️ **Important:** Never commit database credentials to Git. Get all database credentials from your Render dashboard:
-- Go to your Render database service
-- Find the "Internal Database URL" or "Connection" section
-- Extract credentials from the connection string
-- Use these in environment variables only
+⚠️ **Important:** Never commit database credentials to Git. 
+
+Get all database credentials from your Render dashboard:
+1. Go to your Render database service (e.g., `support-haven-db`)
+2. Find the "Internal Database URL" or "Connection" section
+3. Extract credentials from the connection string:
+   - Host: Found in the database URL
+   - Port: `5432` (default PostgreSQL port)
+   - Database: Database name from Render
+   - User: Database username (e.g., `support_haven_db_user2`)
+   - Password: From the database connection string
+4. Use these credentials in Render environment variables only
+
+**Example format** (DO NOT use actual values in code):
+```
+postgresql://username:password@host:port/database_name
+```
 
 For local development, use a local PostgreSQL database or the fallback mode (sample data).
 
