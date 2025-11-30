@@ -17,17 +17,13 @@
 
 ### The Support Haven Development Team
 
-**Victor Niga** - Backend Development  
-*Node.js, Express.js, PostgreSQL, Socket.io*
+**Victor Niga** - Backend Development
 
-**Usanase Makala** - Frontend Development  
-*React, TailwindCSS, UI/UX Design*
+**Usanase Makala** - Frontend Development
 
-**Sheila Gichau** - Frontend Development  
-*React, Component Architecture, User Experience*
+**Sheila Gichau** - Frontend Development
 
-**Victoria Mwangi** - Frontend Development  
-*React, Responsive Design, Accessibility*
+**Victoria Mwangi** - Frontend Development
 
 **Together, we've built a platform that puts survivors first.**
 
@@ -37,8 +33,12 @@
 
 ### The Challenge We're Addressing
 
-- **1 in 3 women** worldwide experience gender-based violence
-- **70% of survivors** never report their experiences
+- **1 in 3 women** worldwide experience gender-based violence  
+  *Source: World Health Organization (WHO), 2021*
+
+- **70% of survivors** never report their experiences  
+  *Source: UN Women, Global Database on Violence Against Women*
+
 - **Stigma and fear** prevent survivors from seeking help
 - **Lack of safe spaces** for sharing and healing
 - **Limited access** to support resources and community
