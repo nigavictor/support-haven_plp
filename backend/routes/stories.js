@@ -208,16 +208,17 @@ router.post('/submit', [
     const { sanitized } = sanitizeContent(sanitizedHTML);
 
     // Insert story into database
+    // For demo/hackathon: Auto-approve stories (change to 'pending' if you want moderation)
     const result = await pool.query(
       `INSERT INTO stories (content, category, pseudonym, status) 
        VALUES ($1, $2, $3, $4) 
        RETURNING *`,
-      [sanitized, category, pseudonym || null, 'pending']
+      [sanitized, category, pseudonym || null, 'approved']
     );
 
     res.status(201).json({
       success: true,
-      message: 'Story submitted successfully. It will be reviewed before publication.',
+      message: 'Story submitted successfully! It is now visible in the stories feed.',
       story: result.rows[0]
     });
   } catch (error) {
@@ -239,7 +240,7 @@ router.get('/meta/categories', async (req, res) => {
       categories: result.rows.map(row => row.category)
     });
   } catch (error) {
-    console.error('Error fetching categories:', error);
+    console.warn('Error fetching categories, using fallback:', error.message);
     // Return categories from sample stories as fallback
     const categories = [...new Set(sampleStories.map(s => s.category))].sort();
     res.json({

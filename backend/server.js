@@ -90,17 +90,20 @@ initDatabase()
     server.listen(PORT, () => {
       console.log(`🚀 Support Haven API server running on port ${PORT}`);
       console.log(`📡 Socket.io server ready for real-time chat`);
-      console.log(`📝 Note: Using fallback sample stories (database not connected)`);
     });
   })
   .catch((error) => {
     console.warn('⚠️  Database connection failed, but server will start with fallback data');
     console.warn('   Error:', error.message);
     console.warn('   Stories API will return sample data');
-    console.warn('   To fix: Create database and update backend/.env with correct credentials');
+    console.warn('   This is normal for local development without a database');
     
     // Start server anyway - routes will use fallback data
-    server.listen(PORT, () => {
+    server.listen(PORT, (err) => {
+      if (err) {
+        console.error('❌ Failed to start server:', err);
+        process.exit(1);
+      }
       console.log(`🚀 Support Haven API server running on port ${PORT} (fallback mode)`);
       console.log(`📡 Socket.io server ready for real-time chat`);
       console.log(`📝 Sample stories are available at /api/stories`);

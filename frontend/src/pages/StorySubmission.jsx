@@ -65,7 +65,7 @@ function StorySubmission() {
           <div className="text-5xl mb-4">✓</div>
           <h2 className="text-2xl font-bold text-green-800 mb-2">Story Submitted Successfully!</h2>
           <p className="text-green-700 mb-4">
-            Your story has been submitted and will be reviewed before publication. 
+            Your story has been submitted successfully! It is now visible in the stories feed. 
             Thank you for sharing your experience.
           </p>
           <p className="text-sm text-green-600">Redirecting to stories...</p>

@@ -32,8 +32,13 @@ pool.on('error', (err) => {
 // Initialize database tables
 async function initDatabase() {
   try {
-    // Test connection first
-    await pool.query('SELECT NOW()');
+    // Test connection first with timeout
+    const connectionPromise = pool.query('SELECT NOW()');
+    const timeoutPromise = new Promise((_, reject) => 
+      setTimeout(() => reject(new Error('Connection timeout')), 5000)
+    );
+    
+    await Promise.race([connectionPromise, timeoutPromise]);
     console.log('✅ Database connection successful');
     
     // Create stories table
