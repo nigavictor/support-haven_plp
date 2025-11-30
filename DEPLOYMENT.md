@@ -64,8 +64,9 @@ This is the easiest and most reliable free option.
    - Sign up with GitHub (free)
 
 2. **Deploy Frontend:**
-   - In Vercel dashboard, click "Add New" → "Project"
-   - Import your GitHub repository
+   - **First time?** In Vercel dashboard, click "Add New" → "Project"
+   - **Already have project?** Just go to your existing project in the dashboard
+   - Import/Select your GitHub repository: `nigavictor/support-haven_plp`
    - Settings:
      - **Framework Preset:** Vite
      - **Root Directory:** `frontend`

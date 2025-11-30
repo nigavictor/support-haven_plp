@@ -58,9 +58,16 @@ Think of it like: Build the house first, then give it the address later!
 
 ### Step 2: Deploy Frontend to Vercel (This Gives Us the Frontend URL)
 
+**Note:** If this is your **first time** deploying to Vercel, you'll create a **new project**. If you've already deployed before, go to your existing project and redeploy.
+
 1. Go to https://vercel.com → Sign up/login
-2. Click "Add New" → "Project"
-3. Import GitHub repo: `nigavictor/support-haven_plp`
+
+2. **First Time?** Click "Add New" → "Project"
+   - **Already have a project?** Go to your existing project in the dashboard
+   
+3. **Import GitHub repo:**
+   - Select: `nigavictor/support-haven_plp`
+   - If project already exists, Vercel will show "Redeploy" or "Deploy" button
 4. Settings:
    - **Root Directory:** `frontend`
    - **Framework Preset:** Vite
