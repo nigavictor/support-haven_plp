@@ -14,13 +14,13 @@ This is the easiest and most reliable free option.
    - Go to https://render.com
    - Sign up with GitHub (free)
 
-2. **Create PostgreSQL Database:**
-   - In Render dashboard, click "New +" → "PostgreSQL"
-   - Name: `support-haven-db`
-   - Region: Choose closest to you
-   - Plan: Free
-   - Click "Create Database"
-   - **Save the connection string!** (You'll need it)
+2. **PostgreSQL Database (Already Created!):**
+   - Your database is already set up:
+     - **Host:** `dpg-d4lhff0gjchc73anqadg-a.oregon-postgres.render.com`
+     - **Database:** `support_haven_db`
+     - **User:** `support_haven_db_user`
+     - **Password:** `XbEPf6zXLEFLTSmmLBgDrcGpocl4fCFP`
+   - **Note:** You can skip creating a new database since you already have one!
 
 3. **Deploy Backend:**
    - In Render dashboard, click "New +" → "Web Service"
