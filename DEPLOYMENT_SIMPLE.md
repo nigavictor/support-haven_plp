@@ -4,12 +4,22 @@ Here's the **logical order** explained simply:
 
 ## The Deployment Flow Explained
 
-**Why the order matters:**
-- You need to deploy backend first (it can start without the frontend URL)
-- Then deploy frontend (this gives you the frontend URL)
-- Then update backend's `FRONTEND_URL` (so backend knows where frontend is)
+**The Problem (Chicken & Egg):**
+- Backend needs `FRONTEND_URL` for CORS (to allow frontend requests)
+- Frontend URL doesn't exist until you deploy the frontend!
+- So we can't set it correctly from the start
 
-Think of it like: Build the house first, then give it the address!
+**The Solution (3 Steps):**
+1. Deploy backend with a placeholder `FRONTEND_URL`
+2. Deploy frontend → This generates the actual frontend URL
+3. Go back and update backend's `FRONTEND_URL` with the real URL
+
+**Why This Makes Sense:**
+- Backend can start without the correct `FRONTEND_URL` (it just won't allow CORS requests yet)
+- Once you have the frontend URL, update backend so they can communicate
+- This is normal! Most deployment workflows work this way.
+
+Think of it like: Build the house first, then give it the address later!
 
 ---
 
