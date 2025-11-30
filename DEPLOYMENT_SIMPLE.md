@@ -25,16 +25,28 @@ Think of it like: Build the house first, then give it the address later!
 
 ## 📋 Step-by-Step Deployment
 
-### Step 1: Deploy Backend to Render (First Time - No Frontend URL Needed Yet)
+### Step 1: Deploy Backend to Render
 
-1. Go to https://render.com → Sign up/login
-2. Click "New +" → "Web Service"
-3. Connect GitHub repo: `nigavictor/support-haven_plp`
-4. Settings:
-   - **Name:** `support-haven-backend`
+**You already have:**
+- ✅ `support-haven-db` (your database)
+- ✅ `support-haven_plp` (existing service?)
+
+**Options:**
+
+**Option A: If `support-haven_plp` is already your backend:**
+- Click on `support-haven_plp` service
+- Go to "Environment" tab
+- Add/update environment variables (see below)
+- It will auto-redeploy
+
+**Option B: If you need to create a new backend service:**
+1. In your Render project/dashboard, click **"Add Service"** or **"New +"** → **"Web Service"**
+2. Connect GitHub repo: `nigavictor/support-haven_plp`
+3. Settings:
+   - **Name:** `support-haven-backend` (or use existing `support-haven_plp`)
    - **Environment:** Node
-   - **Root Directory:** `backend` (or leave empty)
-   - **Build Command:** `npm install`
+   - **Root Directory:** `backend` (IMPORTANT: set this to `backend` folder)
+   - **Build Command:** `npm install` (or leave empty, Render auto-detects)
    - **Start Command:** `npm start`
 
 5. **Add Environment Variables:**
