@@ -69,10 +69,26 @@ This is the easiest and most reliable free option.
    - Wait for deployment to complete (usually 1-2 minutes)
 
 4. **Get Your Vercel Frontend URL:**
-   - After deployment, Vercel will show you a URL like:
-     - `https://support-haven-plp.vercel.app`
-     - OR `https://support-haven-plp-xyz123.vercel.app`
-   - **Copy this URL** - you'll need it for the next step!
+   
+   After deployment completes, find your URL in one of these places:
+   
+   **Option 1: Vercel Dashboard (Easiest)**
+   - Go to https://vercel.com/dashboard
+   - Click on your project name (`support-haven_plp` or similar)
+   - The URL is displayed **at the top of the page** in big text
+   - Example: `https://support-haven-plp.vercel.app`
+   
+   **Option 2: Deployment Page**
+   - Click on the latest deployment
+   - The URL is shown in the deployment card
+   
+   **Option 3: Visit the App**
+   - Click "Visit" or the link in Vercel dashboard
+   - Copy the URL from your browser address bar
+   
+   📖 **Need more help?** See `HOW_TO_GET_VERCEL_URL.md` for detailed step-by-step instructions!
+   
+   **Copy this URL** - you'll need it for the next step!
 
 5. **Update Backend CORS:**
    - Go back to Render dashboard
