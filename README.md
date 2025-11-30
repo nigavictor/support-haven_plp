@@ -174,15 +174,47 @@ This is a hackathon project. For production use, consider:
 
 ## 📦 Production Deployment
 
-For production deployment:
+### Backend (Render)
 
-1. Set `NODE_ENV=production` in backend `.env`
-2. Build frontend: `cd frontend && npm run build`
-3. Serve frontend build with a web server (nginx, Apache)
-4. Use a process manager (PM2) for the backend
-5. Set up SSL certificates
-6. Configure proper database backups
-7. Set up monitoring and logging
+1. Create a PostgreSQL database on Render
+2. Create a Web Service on Render pointing to this repository
+3. Configure environment variables in Render dashboard:
+   - `NODE_ENV=production`
+   - `PORT=10000`
+   - `DB_HOST` - Get from Render database dashboard
+   - `DB_PORT=5432`
+   - `DB_NAME` - Get from Render database dashboard
+   - `DB_USER` - Get from Render database dashboard
+   - `DB_PASSWORD` - Get from Render database dashboard (Internal Database URL)
+   - `FRONTEND_URL` - Your Vercel frontend URL
+   - `ADMIN_USERNAME=admin`
+   - `ADMIN_PASSWORD` - Set a strong password
+
+4. Set Root Directory to `backend`
+5. Build Command: `npm install`
+6. Start Command: `npm start`
+
+### Frontend (Vercel)
+
+1. Import this repository to Vercel
+2. Configure:
+   - Root Directory: `frontend`
+   - Framework Preset: Vite
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
+3. Add environment variable:
+   - `VITE_API_URL` - Your Render backend URL
+4. Deploy
+
+### Database Credentials
+
+⚠️ **Important:** Never commit database credentials to Git. Get all database credentials from your Render dashboard:
+- Go to your Render database service
+- Find the "Internal Database URL" or "Connection" section
+- Extract credentials from the connection string
+- Use these in environment variables only
+
+For local development, use a local PostgreSQL database or the fallback mode (sample data).
 
 ## 🤝 Contributing
 

@@ -36,3 +36,8 @@ tmp/
 temp/
 *.tmp
 
+# Documentation files (keep only README.md in root, and subdirectory READMEs)
+*.md
+!README.md
+!**/README.md
+
