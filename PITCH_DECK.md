@@ -423,6 +423,15 @@ A secure, anonymous platform where survivors of gender-based violence can:
 - 5-7 minutes presentation
 - 2-3 minutes for Q&A
 
+### Statistics Sources
+
+**1 in 3 women experience GBV:**
+- World Health Organization (WHO). (2021). Violence against women prevalence estimates, 2018. Global, regional and national prevalence estimates for intimate partner violence against women and global and regional prevalence estimates for non-partner sexual violence against women.
+
+**70% of survivors never report:**
+- UN Women. Global Database on Violence Against Women. Multiple country studies showing underreporting rates ranging from 60-80% across different regions.
+- United Nations Office on Drugs and Crime (UNODC). Global Study on Homicide: Gender-related killing of women and girls, 2019.
+
 ---
 
 **Good luck with your presentation! 🚀**
